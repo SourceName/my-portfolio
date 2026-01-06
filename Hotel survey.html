@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Hotel's survey form</h1>
+    <p id="description">Thank you for staying at our hotel, please provide feedback based on your experience.</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            <p>Name</p>
+        </label>
+        <input id="name" type="text" required placeholder="Enter your name" />
+        <label for="email" id="email-label">
+            <p>Email</p>
+        </label>
+        <input id="email" type="email" required placeholder="Enter your email" />
+        <label for="number" id="number-label">
+            <p>Age</p>
+        </label>
+        <input id="number" type="number" min="3" max="100" placeholder="Age" />
+        <p>How long did you stay at our Hotel?</p>
+        <select id="dropdown">
+            <option value="1">1 day</option>
+            <option value="2">2 days</option>
+            <option value="3">3 days</option>
+            <option value="4">4 days</option>
+            <option value="5">5 days</option>
+            <option value="6">6 days</option>
+            <option value="7">7 days</option>
+            <option value="8">7+ days</option>
+        </select>
+        <p>Will you stay at this hotel again?</p>
+        <fieldset1>
+            <input id="radio" type="radio" value="yes-option" name="yes">
+            <label for="yes-option">Yes</label>
+            <input id="radio" type="radio" value="no-option" name="yes">
+            <p>Please check your favourite things that you experience on our hotel</p>
+            <input type="checkbox" value="food">Good Food
+            <input type="checkbox" value="service">Good Services
+            <input type="checkbox" value="atmosphere">Good Atmosphere
+            <input type="checkbox" value="location">Good Location
+            <p>Any comments or suggestions?</p>
+            <textarea id="suggestions" name="suggestions" placeholder="Enter your suggestions here..."></textarea><br>
+            <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
